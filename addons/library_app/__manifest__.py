@@ -1,12 +1,14 @@
-{
- 'name':'Library Management',
- 'description':'Manage library book catalogue and lending',
- 'author':'Daniel Reis',
- 'depends':['base'],
- 'application':True,
- 'data':[
-  'views/library_menu.xml',
-  'security/library_security.xml', 
-  'security/ir.model.access.csv',
+{'name': 'Library Management Application',
+ 'description': 'Library books, members and book borrowing.',
+ 'author': 'Daniel Reis',
+ 'depends': ['base'],
+ 'data': [
+    'security/library_security.xml',
+    'security/ir.model.access.csv',
+    'views/library_menu.xml',
+    'views/book_view.xml',
+    'views/book_list_template.xml',
  ],
-}
+ 'application': True,
+ 'installable': True,
+ }
